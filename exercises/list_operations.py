@@ -2,22 +2,29 @@
 练习: 列表操作
 
 描述：
-实现对学生列表的添加、删除和修改操作。
-
-请补全下面的函数，对学生列表进行各种操作。
+实现学生列表的增删改操作。
 """
 
-def student_list_operations(students, operation, *args):
+def student_list_operations(student_list, operation, name, new_name=None):
     """
     对学生列表进行操作
     
     参数:
-    - students: 学生列表
-    - operation: 操作类型 ("add", "remove", "update")
-    - args: 操作所需的额外参数
+    - student_list: 学生列表
+    - operation: 操作类型 ('add', 'remove', 'update')
+    - name: 学生姓名
+    - new_name: 新的学生姓名（仅用于update操作）
     
     返回:
     - 操作后的学生列表
     """
-    # 请在下方编写代码
-    pass 
+    if operation == "add":
+        student_list.append(name)
+    elif operation == "remove":
+        if name in student_list:
+            student_list.remove(name)
+    elif operation == "update":
+        if name in student_list:
+            index = student_list.index(name)
+            student_list[index] = new_name
+    return student_list 

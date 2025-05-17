@@ -9,8 +9,6 @@
 
 def print_hello_world():
     """
-    输出"Hello, World!"
-    
-    用于学习print函数的基本使用
+    打印 "Hello, World!" 到标准输出
     """
-    pass
+    print("Hello, World!")

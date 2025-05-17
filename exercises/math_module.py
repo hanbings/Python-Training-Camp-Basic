@@ -7,15 +7,16 @@
 请补全下面的函数，使用math模块的sqrt函数计算平方根。
 """
 
+import math
+
 def calculate_square_root(number):
     """
-    计算数字的平方根
+    计算一个数的平方根
     
     参数:
-    - number: 非负数
+    - number: 要计算平方根的数
     
     返回:
-    - 数字的平方根
+    - 平方根值
     """
-    # 请在下方编写代码
-    pass 
+    return math.sqrt(number) 
